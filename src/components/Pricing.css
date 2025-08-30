@@ -1,0 +1,170 @@
+.pricing-toggle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  padding: 4px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  color: #9ca3af;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.toggle-btn.active {
+  background-color: #8b5cf6;
+  color: white;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.pricing-card {
+  background-color: #1a1a1a;
+  padding: 40px 30px;
+  border-radius: 16px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.pricing-card:hover {
+  transform: translateY(-8px);
+  background-color: #8b5cf6;
+  border-color: #8b5cf6;
+}
+
+.pricing-card:hover .plan-name,
+.pricing-card:hover .plan-price,
+.pricing-card:hover .plan-subtitle {
+  color: white;
+}
+
+.pricing-card:hover .feature-item {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.pricing-card.highlighted {
+  background-color: #8b5cf6;
+  border-color: #8b5cf6;
+}
+
+.pricing-card.highlighted .plan-name,
+.pricing-card.highlighted .plan-price,
+.pricing-card.highlighted .plan-subtitle {
+  color: white;
+}
+
+.pricing-card.highlighted .feature-item {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.plan-header {
+  margin-bottom: 30px;
+}
+
+.plan-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: white;
+}
+
+.plan-price {
+  margin-bottom: 8px;
+}
+
+.price {
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+}
+
+.period {
+  font-size: 1.2rem;
+  color: #9ca3af;
+}
+
+.plan-subtitle {
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+.plan-features {
+  list-style: none;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.feature-item {
+  margin-bottom: 16px;
+  color: #9ca3af;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Button styles for different plans */
+.pricing-card .btn-secondary {
+  background-color: transparent;
+  color: #9ca3af;
+  border: 2px solid #8b5cf6;
+  width: 100%;
+}
+
+.pricing-card .btn-secondary:hover {
+  background-color: #8b5cf6;
+  color: white;
+}
+
+.pricing-card.highlighted .btn-white {
+  background-color: #000000;
+  color: white;
+  width: 100%;
+}
+
+.pricing-card.highlighted .btn-white:hover {
+  background-color: #1a1a1a;
+}
+
+/* Hover button styles */
+.pricing-card:hover .btn-secondary {
+  background-color: #000000;
+  color: white;
+  border-color: #000000;
+}
+
+.pricing-card:hover .btn-white {
+  background-color: #000000;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .pricing-card {
+    padding: 30px 20px;
+  }
+  
+  .price {
+    font-size: 2.5rem;
+  }
+}

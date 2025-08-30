@@ -1,0 +1,60 @@
+.logo-bar {
+  padding: 60px 0;
+  background-color: #000000;
+  overflow: hidden;
+}
+
+.logos-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.logos-scroll {
+  display: flex;
+  animation: scroll-left 20s linear infinite;
+  width: max-content;
+}
+
+/* .logos-scroll:hover {
+  animation-play-state: paused;
+} */
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.logo-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #9ca3af;
+  font-weight: 500;
+  font-size: 1.1rem;
+  white-space: nowrap;
+  padding: 0 20px;
+}
+
+.logo-icon {
+  font-size: 1.2rem;
+}
+
+.logo-text {
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .logos-scroll {
+    animation-duration: 15s;
+  }
+  
+  .logo-item {
+    font-size: 1rem;
+    padding: 0 15px;
+  }
+}
