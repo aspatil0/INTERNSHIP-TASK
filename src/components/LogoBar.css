@@ -16,9 +16,7 @@
   width: max-content;
 }
 
-/* .logos-scroll:hover {
-  animation-play-state: paused;
-} */
+
 
 @keyframes scroll-left {
   0% {
