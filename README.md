@@ -19,3 +19,18 @@ Blog/Insights Section with cards for latest updates
 Smooth Animations for an interactive feel
 
 Reusable Components for easy scalability
+
+
+
+# Clone the repository
+git clone <your-repo-link>
+
+# Navigate to the project folder
+cd <project-folder>
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm start
+
