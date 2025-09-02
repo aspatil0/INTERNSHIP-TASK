@@ -4,19 +4,6 @@ This project is a responsive frontend landing page for an AI-Powered Design Assi
 
 
 
-project-root/
-│
-├── public/               # Static assets (images, icons, etc.)
-├── src/
-│   ├── components/       # Reusable UI components
-│   ├── pages/            # Page layout and sections
-│   ├── styles/           # CSS or Tailwind styles
-│   ├── App.js            # Root component
-│   ├── index.js          # React entry point
-│
-├── package.json          # Project metadata and dependencies
-└── README.md             # Project documentation
-
 
 
 🚀 Features
